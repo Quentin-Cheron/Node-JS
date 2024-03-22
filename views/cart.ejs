@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/7a994d3c9f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <%- include('./includes/header') %>
+    <div class="banner">
+      <h1><%= title %></h1>
+      <span><%= breadCrumb %></span>
+    </div>
+    <section id="cart">
+      <% for (let i = 0; i < products.length; i++ ) { %>
+      <article>
+        <h2>Title : <%= products[i].label %></h2>
+        <span>Price : <%= products[i].price %>$</span>
+        <p>Description : <%= products[i].description %></p>
+        <p>Totals : <%= products[i].number %></p>
+        <form method="post" action="/delete">
+          <input type="hidden" name="id" value="<%= products[i]._id %>" />
+          <button>Supprimer</button>
+        </form>
+      </article>
+      <% } %>
+    </section>
+  </body>
+</html>

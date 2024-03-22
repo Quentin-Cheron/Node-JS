@@ -1,0 +1,69 @@
+# Projet de Shopping en Ligne
+
+## Introduction
+
+Ce projet est une application web conçue pour le shopping en ligne. Il permet aux utilisateurs de s'inscrire, de se connecter, de parcourir les produits, d'ajouter des produits à leur panier et de passer commande. Le projet est implémenté en utilisant Node.js avec Express.js pour le backend et une base de données MongoDB pour le stockage des données. Le frontend est construit en HTML, CSS et JavaScript.
+
+## Fonctionnalités
+
+### Authentification Utilisateur :
+
+- Les utilisateurs peuvent s'inscrire avec leurs informations personnelles (prénom, nom, email, mot de passe) pour créer un compte.
+- Les utilisateurs existants peuvent se connecter en utilisant leur email et leur mot de passe.
+- Les sessions sont utilisées pour gérer l'authentification de l'utilisateur tout au long de la session.
+
+### Gestion des Produits :
+
+- Les produits sont gérés dans la base de données.
+- Les utilisateurs administrateurs peuvent mettre à jour les informations sur les produits.
+
+### Panier d'Achat :
+
+- Les utilisateurs peuvent ajouter des produits à leur panier d'achat.
+- Les utilisateurs peuvent supprimer à tous moment des produits de leurs panier.
+- Le panier d'achat stocke des informations telles que le nom du produit, le prix, la description et la quantité.
+
+### Sessions Utilisateur :
+
+- Les sessions sont utilisées pour maintenir l'état d'authentification de l'utilisateur.
+- Les utilisateurs restent connectés jusqu'à ce qu'ils se déconnectent manuellement ou que la session expire.
+
+## Technologies Utilisées
+
+- Node.js
+- Express.js
+- MongoDB
+- bcrypt.js
+- HTML/CSS/JavaScript
+
+## Structure utilisé
+
+Utilisation de la structure MVC : Model View Controller
+
+## Problème rencontré :
+
+- Utilisation du type module pour l'importation
+
+## Temps estimé pour la création du projet : 9h
+
+## Recettage
+
+- Recettage effectué par le developpeur
+
+## Installation
+
+Pour exécuter ce projet localement, suivez ces étapes :
+
+1. Clonez le dépôt : `git clone <repository_url>`
+2. Accédez au répertoire du projet : `cd <project_folder>`
+3. Installez les dépendances : `npm install`
+4. Configurez votre base de données MongoDB et configurez la connexion dans le projet.
+5. Lancez le serveur : `npm run dev`
+6. Accédez à l'application via votre navigateur web à `http://localhost:3000`.
+
+## Fichier à ajouter
+
+Ajouter le fichier .env à la racine avec dedans :
+
+1. PORT=3000
+2. MONGO_URL='mongodb://localhost:27017/Node_Js'

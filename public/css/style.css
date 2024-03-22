@@ -1,0 +1,246 @@
+/* Global */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.3rem;
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+input {
+  outline: none;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 3.5rem;
+}
+
+h1, h2, h3 {
+  font-family: "Poppins", sans-serif;;
+}
+
+/* Header */
+
+header {
+  height: 7rem;
+  padding: 3rem;
+}
+
+header nav, header ul {
+  height: 100%;
+}
+
+header ul {
+  display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 25px;
+}
+
+header ul a {
+  color: black;
+}
+
+header ul a:hover {
+  opacity: .6;
+}
+
+/* Banner */
+
+div.banner {
+  text-align: center;
+  background-image: url("../img/banner.jpg");
+  height: 268px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+div.banner span {
+  font-size: 1.5rem;
+}
+
+/* Section product in Home Page */
+
+section#products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 5rem;
+  padding: 3rem;
+}
+
+section#products h2 {
+  margin: 0;
+  text-transform: capitalize;
+  margin-top: 1rem;
+}
+
+section#products img {
+  border-radius: 20px;
+  width: 100%;
+  height: max-content;
+  object-fit: cover;
+}
+
+section#products .price {
+  text-align: center;
+  display: block;
+}
+
+section#products article div.details {
+  margin-top: 1rem;
+  gap: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+section#products article .description {
+  text-align: center;
+  margin: 0;
+}
+
+section#products article div.details a {
+  padding: 10px;
+  border: 1px solid rgba(128, 128, 128, .3);
+}
+
+section#products article {
+  position: relative;
+}
+
+section#products i {
+  position: absolute;
+  right: 3rem;
+  top: 3rem;
+  color: white;
+  background-color: rgba(128, 128, 128, .3);
+  padding: 1rem;
+  border-radius: 100%;
+  text-align: center;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+  visibility: visible;
+}
+
+section#products button {
+  visibility: hidden;
+}
+
+section#products i::after {
+  content: "";
+  width: 100%;
+  border-radius: 100%;
+  height: 100%;
+  display: block;
+  background-color: unset;
+  position: absolute;
+  left: -5rem;
+  transition: all .5s;
+}
+
+section#products i:hover::after {
+  background-color: rgba(128, 128, 128, .3);
+  position: absolute;
+  left: 0;
+}
+
+/* formulaire */
+
+form:where(.sign-in, .sign-up, .products) {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+form:where(.sign-in, .sign-up, .products) div {
+  display: flex;
+  flex-direction: column;
+}
+
+form:where(.sign-in, .sign-up, .products) div input {
+  margin-top: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(128, 128, 128, .3);
+}
+
+form:where(.sign-in, .sign-up, .products) button {
+  background: transparent;
+  outline: none;
+  border: 1px solid rgba(128, 128, 128, .3);
+  width: max-content;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/* Cart Page */
+
+section#cart article {
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+section#cart article :where(span, p) {
+  display: flex;
+  align-items: center;
+}
+
+section#cart article h2 {
+  text-transform: capitalize;
+}
+
+form.products {
+  display: flex;
+  align-items: flex-end;
+}
+
+form.products button {
+  height: 37px;
+}
+
+/* Footer */
+
+footer {
+  height: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
