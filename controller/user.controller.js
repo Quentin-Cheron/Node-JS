@@ -128,11 +128,14 @@ export const cartData = async (req, res) => {
 
   const array = existingUser.cart;
 
+  // search the product
+
   const findProducts = array.findIndex((e) => e.label === label);
 
-  console.log(req.body);
+  // check if the product exist
 
   if (existingProduct) {
+    // if the product is already in cart, increment the number of product
     if (findProducts >= 0) {
       await user.updateOne(
         {
@@ -143,8 +146,9 @@ export const cartData = async (req, res) => {
         }
       );
     } else {
+      // if the product is not in the user cart add the product in the cart
       await user.updateOne(
-        { _id: req.session.user_id }, // Assurez-vous de cibler l'utilisateur spécifique
+        { _id: req.session.user_id },
         {
           $push: {
             cart: {
