@@ -58,7 +58,7 @@ Utilisation de la structure MVC : Model View Controller
 Pour exécuter ce projet localement, suivez ces étapes :
 
 1. Clonez le dépôt : `git clone https://github.com/Quentin-Cheron/Node-JS.git`
-2. Accédez au répertoire du projet : `cd <project_folder>`
+2. Accédez au répertoire du projet : `cd Node-Js`
 3. Installez les dépendances : `npm install`
 4. Configurez votre base de données MongoDB et configurez la connexion dans le projet.
 5. Lancez le serveur : `npm run dev`
