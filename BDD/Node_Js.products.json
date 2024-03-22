@@ -1,0 +1,65 @@
+[{
+  "_id": {
+    "$oid": "65f18a19db6b284b78bdf3a4"
+  },
+  "label": "product 4",
+  "price": "45",
+  "description": "OK"
+},
+{
+  "_id": {
+    "$oid": "65f18a22db6b284b78bdf3a6"
+  },
+  "label": "product 2",
+  "price": "39.99",
+  "description": "Lorem ipsum dolor sit amet"
+},
+{
+  "_id": {
+    "$oid": "65f18a31db6b284b78bdf3a8"
+  },
+  "label": "product 3",
+  "price": "39.99",
+  "description": "Lorem ipsum dolor sit amet",
+  "img": "img-"
+},
+{
+  "_id": {
+    "$oid": "65f18a49db6b284b78bdf3aa"
+  },
+  "label": "product 4",
+  "price": "39.99",
+  "description": "Lorem ipsum dolor sit amet"
+},
+{
+  "_id": {
+    "$oid": "65f18a5ddb6b284b78bdf3ac"
+  },
+  "label": "product 5",
+  "price": "39.99",
+  "description": "Lorem ipsum dolor sit amet"
+},
+{
+  "_id": {
+    "$oid": "65f18a6adb6b284b78bdf3ae"
+  },
+  "label": "product 6",
+  "price": "39.99",
+  "description": "Lorem ipsum dolor sit amet"
+},
+{
+  "_id": {
+    "$oid": "65f18a70db6b284b78bdf3b0"
+  },
+  "label": "product 7",
+  "price": "39.99",
+  "description": "Lorem ipsum dolor sit amet"
+},
+{
+  "_id": {
+    "$oid": "65f18a74db6b284b78bdf3b2"
+  },
+  "label": "product 8",
+  "price": "39.99",
+  "description": "Lorem ipsum dolor sit amet"
+}]

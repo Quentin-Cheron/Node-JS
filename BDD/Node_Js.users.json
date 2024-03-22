@@ -1,0 +1,30 @@
+[{
+  "_id": {
+    "$oid": "65fdc93e3d1fbe447ebd842d"
+  },
+  "firstname": "admin",
+  "lastname": "admin",
+  "email": "admin@gmail.com",
+  "password": "$2a$08$phpet1uFlTFvprQVscL3menhhx94rCNtYS7J1ZEaC0z/Yd3OjJrm2",
+  "cart": [],
+  "role": "client",
+  "createdAt": {
+    "$date": "2024-03-22T18:09:02.370Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65fdc9fe3d1fbe447ebd843a"
+  },
+  "firstname": "client",
+  "lastname": "client",
+  "email": "client@gmail.com",
+  "password": "$2a$08$otQV9Hs5vi6EPPHHsjT9pu8VsByaJsuFhtsamai2KXs1DyGuSmJIS",
+  "cart": [],
+  "role": "client",
+  "createdAt": {
+    "$date": "2024-03-22T18:12:14.462Z"
+  },
+  "__v": 0
+}]

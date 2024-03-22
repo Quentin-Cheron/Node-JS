@@ -36,22 +36,28 @@ Ce projet est une application web conçue pour le shopping en ligne. Il permet a
 - bcrypt.js
 - HTML/CSS/JavaScript
 
-## Structure utilisé
+## Connection au comptes :
 
-Utilisation de la structure MVC : Model View Controller
+1. Administrateur :
 
-## Problème rencontré :
+   - Email : admin@gmail.com
+   - Mot de passe : 1234
 
-- Utilisation du type module pour l'importation
+2. Client :
 
-## Temps estimé pour la création du projet : 9h
+   - Email : client@gmail.com
+   - Mot de passe : 1234
 
-- frontend : 3h
-- backend : 6h
+Pour passer sur la page d'administration des produits il faut d'abord ce déconnecté puis se connecter pour reinitialisé la session si connecté en tant que client sinon juste aller sur la page
 
-## Recettage
+## Routes
 
-- Recettage effectué par le développeur
+1. / : page d'accueil
+2. /admin : accéder à la page d'administration
+3. /sign-up : s'inscrire
+4. /sign-in : se connecter
+5. /logout : se déconnecter
+6. /cart : accéder au panier
 
 ## Installation
 
@@ -70,3 +76,21 @@ Ajouter le fichier `.env` à la racine et ajouter à l'intérieur :
 
 1. PORT=3000
 2. MONGO_URL='mongodb://localhost:27017/Node_Js'
+
+## Structure utilisé
+
+Utilisation de la structure MVC : Model View Controller
+
+## Problème rencontré :
+
+- Utilisation du type module pour l'importation
+
+## Recettage
+
+- Recettage effectué par le développeur
+
+## Temps estimé pour la création du projet : 9h
+
+- Frontend : 3h
+- Backend : 5h
+- Recettage : 1h
