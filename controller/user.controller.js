@@ -130,6 +130,8 @@ export const cartData = async (req, res) => {
 
   const findProducts = array.findIndex((e) => e.label === label);
 
+  console.log(req.body);
+
   if (existingProduct) {
     if (findProducts >= 0) {
       await user.updateOne(
@@ -141,18 +143,20 @@ export const cartData = async (req, res) => {
         }
       );
     } else {
-      await user.updateOne({
-        cart: [
-          ...array,
-          {
-            label,
-            price,
-            description,
-            number: 1,
-            id: existingProduct._id,
+      await user.updateOne(
+        { _id: req.session.user_id }, // Assurez-vous de cibler l'utilisateur spécifique
+        {
+          $push: {
+            cart: {
+              label,
+              price,
+              description,
+              number: 1,
+              id: existingProduct._id,
+            },
           },
-        ],
-      });
+        }
+      );
     }
   }
 
