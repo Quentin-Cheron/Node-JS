@@ -36,6 +36,14 @@ Ce projet est une application web conçue pour le shopping en ligne. Il permet a
 - bcrypt.js
 - HTML/CSS/JavaScript
 
+## Configuration base de donnée :
+
+Database : Node_JS
+
+Collection : users, products
+
+données des collections dans le dossier BDD à la racine
+
 ## Connection au comptes :
 
 1. Administrateur :
